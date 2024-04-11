@@ -11,7 +11,7 @@ import java.io.*;
 public class HelloController {
 	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
-	public String test() {
+	public String test() throws Exception{
 	File file = new File(
             "/data/testfile.txt");
  
