@@ -25,15 +25,7 @@ public class HelloController {
  
         // Declaring a string variable
         String st;
-        StringBuilder sb1 = new 
-                      StringBuilder("This file content: "); 
-        System.out.println("Input: " + sb1); 
-  
-        // Appending the boolean value 
-        sb1.append(true); 
-
-        // Condition holds true till
-        // there is character in a string
+        StringBuilder sb1 = new StringBuilder("This file content: "); 
         while ((st = br.readLine()) != null)
 	{
             // Print the string
