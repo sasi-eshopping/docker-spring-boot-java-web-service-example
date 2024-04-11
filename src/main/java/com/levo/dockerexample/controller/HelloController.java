@@ -9,11 +9,11 @@ import java.io.*;
 @RestController
 @RequestMapping("docker-java-app")
 public class HelloController {
-	
+	@Value("${file.path}")
+	private String filepath;
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String test() throws Exception{
-	File file = new File(
-            "/data/testfile.txt");
+	File file = new File(filepath);
  
         // Note:  Double backquote is to avoid compiler
         // interpret words
